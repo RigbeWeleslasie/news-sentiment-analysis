@@ -20,6 +20,16 @@ parts/
 sdist/
 var/
 wheels/
+venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+data/raw/
+*.csv
+*.zip
+.ipynb_checkpoints/
+get-pip.py
 share/python-wheels/
 *.egg-info/
 .installed.cfg
