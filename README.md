@@ -71,7 +71,7 @@ news-sentiment-analysis/
 
 ---
 
-## 📦 Data Sources
+##  Data Sources
 
 ### 1. Financial News Dataset (FNSPID)
 - **File:** `data/raw/raw_analyst_ratings.csv`
@@ -91,7 +91,7 @@ news-sentiment-analysis/
 
 ---
 
-## ⚙️ Environment Setup
+##  Environment Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -132,7 +132,7 @@ python -c "import pandas; import numpy; import matplotlib; import seaborn; impor
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Task 1 — Exploratory Data Analysis
 ```bash
@@ -174,7 +174,7 @@ pytest tests/ -v
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Metric | Value |
 |--------|-------|
@@ -184,10 +184,10 @@ pytest tests/ -v
 | Overall Pearson r | **0.205** (p < 0.001) |
 | Positive sentiment avg return | **+0.82%** |
 | Negative sentiment avg return | **-1.17%** |
-| NVDA correlation | 0.2148 ✅ significant |
-| GOOG correlation | 0.1895 ✅ significant |
-| AAPL correlation | 0.1239 ❌ not significant |
-| AMZN correlation | 0.1668 ❌ not significant |
+| NVDA correlation | 0.2148  significant |
+| GOOG correlation | 0.1895  significant |
+| AAPL correlation | 0.1239  not significant |
+| AMZN correlation | 0.1668  not significant |
 
 ---
 
