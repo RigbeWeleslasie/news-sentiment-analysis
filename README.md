@@ -18,29 +18,30 @@ This project builds a rigorous analytical pipeline that quantifies sentiment in 
 ---
 
 ## Project Structure
+
 news-sentiment-analysis/
 │
 ├── .github/
 │   └── workflows/
-│       └── unittests.yml          # CI/CD pipeline (GitHub Actions)
+│       └── unittests.yml
 │
 ├── .vscode/
-│   └── settings.json              # VS Code workspace settings
+│   └── settings.json
 │
 ├── data/
-│   └── raw/                       # Raw data directory (not tracked by git)
-│       ├── raw_analyst_ratings.csv    # Financial news dataset (FNSPID)
-│       ├── cleaned_news.csv           # Cleaned news with derived columns
-│       ├── Data/                      # Stock price CSVs from YFinance
+│   └── raw/
+│       ├── raw_analyst_ratings.csv
+│       ├── cleaned_news.csv
+│       ├── Data/
 │       │   ├── AAPL.csv
 │       │   ├── AMZN.csv
 │       │   ├── GOOG.csv
 │       │   ├── META.csv
 │       │   └── NVDA.csv
-│       └── excel_export/              # Excel exports for sharing
+│       └── excel_export/
 │
 ├── data/
-│   └── processed/                 # Processed data with indicators
+│   └── processed/
 │       ├── AAPL_processed.csv
 │       ├── AMZN_processed.csv
 │       ├── GOOG_processed.csv
@@ -51,15 +52,15 @@ news-sentiment-analysis/
 ├── notebooks/
 │   ├── __init__.py
 │   ├── README.md
-│   ├── eda.ipynb                      # Task 1: Exploratory Data Analysis
-│   ├── technical_analysis.ipynb       # Task 2: Technical Indicators
-│   └── sentiment_correlation.ipynb    # Task 3: Sentiment & Correlation
+│   ├── eda.ipynb
+│   ├── technical_analysis.ipynb
+│   └── sentiment_correlation.ipynb
 │
 ├── src/
-│   └── __init__.py                # Source modules (reusable functions)
+│   └── __init__.py
 │
 ├── tests/
-│   └── test_data.py               # Unit tests (pytest)
+│   └── test_data.py
 │
 ├── scripts/
 │   ├── __init__.py
