@@ -17,7 +17,7 @@ This project builds a rigorous analytical pipeline that quantifies sentiment in 
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 news-sentiment-analysis/
