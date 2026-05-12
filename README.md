@@ -17,31 +17,29 @@ This project builds a rigorous analytical pipeline that quantifies sentiment in 
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
+```
 news-sentiment-analysis/
 │
 ├── .github/
 │   └── workflows/
-│       └── unittests.yml
+│       └── unittests.yml          # CI/CD pipeline (GitHub Actions)
 │
 ├── .vscode/
-│   └── settings.json
+│   └── settings.json              # VS Code workspace settings
 │
 ├── data/
-│   └── raw/
-│       ├── raw_analyst_ratings.csv
-│       ├── cleaned_news.csv
-│       ├── Data/
-│       │   ├── AAPL.csv
-│       │   ├── AMZN.csv
-│       │   ├── GOOG.csv
-│       │   ├── META.csv
-│       │   └── NVDA.csv
-│       └── excel_export/
-│
-├── data/
-│   └── processed/
+│   ├── raw/                       # Raw data directory (not tracked by git)
+│   │   ├── raw_analyst_ratings.csv    # Financial news dataset (FNSPID)
+│   │   ├── cleaned_news.csv           # Cleaned news with derived columns
+│   │   └── Data/                      # Stock price CSVs from YFinance
+│   │       ├── AAPL.csv
+│   │       ├── AMZN.csv
+│   │       ├── GOOG.csv
+│   │       ├── META.csv
+│   │       └── NVDA.csv
+│   └── processed/                 # Processed data with indicators
 │       ├── AAPL_processed.csv
 │       ├── AMZN_processed.csv
 │       ├── GOOG_processed.csv
@@ -52,15 +50,15 @@ news-sentiment-analysis/
 ├── notebooks/
 │   ├── __init__.py
 │   ├── README.md
-│   ├── eda.ipynb
-│   ├── technical_analysis.ipynb
-│   └── sentiment_correlation.ipynb
+│   ├── eda.ipynb                      # Task 1: Exploratory Data Analysis
+│   ├── technical_analysis.ipynb       # Task 2: Technical Indicators
+│   └── sentiment_correlation.ipynb    # Task 3: Sentiment & Correlation
 │
 ├── src/
-│   └── __init__.py
+│   └── __init__.py                # Source modules (reusable functions)
 │
 ├── tests/
-│   └── test_data.py
+│   └── test_data.py               # Unit tests (pytest)
 │
 ├── scripts/
 │   ├── __init__.py
@@ -69,6 +67,7 @@ news-sentiment-analysis/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
